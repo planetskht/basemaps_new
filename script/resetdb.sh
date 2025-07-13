@@ -4,9 +4,8 @@ git pull
 
 sh script/pull_data.sh
 
-echo "Stop unicorn and nginx Server"
-sudo systemctl stop nginx
-sudo systemctl stop unicorn
+echo "Stop Server"
+systemctl stop rails.service
 
 rm -rf public/uploads/attachment
 echo "db:drop.."
@@ -18,6 +17,5 @@ rake db:migrate
 echo "db:seed..."
 rake db:seed
 
-echo "Start unicorn and nginx Server"
-sudo systemctl start nginx
-sudo systemctl start unicorn
+echo "Start Server"
+systemctl start rails.service

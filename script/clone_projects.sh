@@ -12,11 +12,11 @@ git clone git@github.com:planetskht/SKFF-Canal-Basemap-from-Km-0.000-to-Km-45.12
 
 git clone git@github.com:planetskht/Kandaleru-Reservoir-Basemap.git
 
-git clone git@github.com:planetskht/HNSS-Phase-1.git
+# git clone git@github.com:planetskht/HNSS-Phase-1.git
 
-git clone git@github.com:planetskht/HNSS-Phase-2.git
+# git clone git@github.com:planetskht/HNSS-Phase-2.git
 
 git clone git@github.com:planetskht/Pulichinthala-Project.git
 
 cd ..
-cd basemaps
+cd basemaps_new

@@ -26,13 +26,13 @@ cd Kandaleru-Reservoir-Basemap
 git pull
 cd ..
 
-cd HNSS-Phase-1
-git pull
-cd ..
+# cd HNSS-Phase-1
+# git pull
+# cd ..
 
-cd HNSS-Phase-2
-git pull
-cd ..
+# cd HNSS-Phase-2
+# git pull
+# cd ..
 
 cd Pulichinthala-Project
 git pull
@@ -40,5 +40,5 @@ cd ..
 
 
 cd ..
-cd basemaps
+cd basemaps_new
 git pull
