@@ -22,11 +22,15 @@ cd SKFF-Canal-Basemap-from-Km-0.000-to-Km-45.125
 git pull
 cd ..
 
-cd Kandaleru-Reservoir-Basemap
+# cd Kandaleru-Reservoir-Basemap
+# git pull
+# cd ..
+
+cd PBC-and-GKLI-Basemaps
 git pull
 cd ..
 
-cd PBC-and-GKLI-Basemaps
+cd PBC-and-GKLI-Basemap
 git pull
 cd ..
 

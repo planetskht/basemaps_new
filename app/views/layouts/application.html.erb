@@ -213,25 +213,88 @@
       </div>
       
       <div class="container rounded_corners" style="padding-top:5px">
-        <% if @project and @project.image_files.present? %>
-          <div id="owl-demo" class="owl-carousel owl-theme">
-            <% @project.image_files.each do |file| %>
-              <div class="item"> 
-                <a href="#" class="pop"> <%= image_tag(file.attachment.url(:medium), height:"268", big_src:"#{file.attachment.url(:large)}")  %> </a>
-              </div>
-            <% end %> 
+        <% if @project && @project.image_files.present? %>
+          <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <% @project.image_files.each_slice(3).with_index do |_, index| %>
+                <li data-target="#projectCarousel" data-slide-to="<%= index %>" class="<%= "active" if index == 0 %>"></li>
+              <% end %>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <% @project.image_files.each_slice(3).with_index do |files, index| %>
+                <div class="item <%= "active" if index == 0 %>">
+                  <div class="row">
+                    <% files.each do |file| %>
+                      <div class="col-sm-4">
+                        <a href="#" class="pop">
+                          <%= image_tag(
+                                file.attachment.url(:medium),
+                                class: "img-responsive fixed-carousel-img",
+                                big_src: file.attachment.url(:large)
+                              ) %>
+                        </a>
+                      </div>
+                    <% end %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#projectCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#projectCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
           </div>
-        <% elsif @sub_project and @sub_project.image_files.present? %>
-          <div id="owl-demo" class="owl-carousel owl-theme">
-            <% @sub_project.image_files.first(100).each do |file| %>
-              <div class="item"> 
-                <a href="#" class="pop"> <%= image_tag(file.attachment.url(:medium), height:"268", big_src:"#{file.attachment.url(:large)}")  %> </a>
-              </div>
-            <% end %> 
+
+        <% elsif @sub_project && @sub_project.image_files.present? %>
+          <div id="subProjectCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <% @sub_project.image_files.first(100).each_slice(3).with_index do |_, index| %>
+                <li data-target="#subProjectCarousel" data-slide-to="<%= index %>" class="<%= "active" if index == 0 %>"></li>
+              <% end %>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <% @sub_project.image_files.first(100).each_slice(3).with_index do |files, index| %>
+                <div class="item <%= "active" if index == 0 %>">
+                  <div class="row">
+                    <% files.each do |file| %>
+                      <div class="col-sm-4">
+                        <a href="#" class="pop">
+                          <%= image_tag(
+                                file.attachment.url(:medium),
+                                class: "img-responsive fixed-carousel-img",
+                                big_src: file.attachment.url(:large)
+                              ) %>
+                        </a>
+                      </div>
+                    <% end %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#subProjectCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#subProjectCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
           </div>
+
         <% else %>
           <embed src="<%= header_flash_file %>" width="1140" height="268"/>
         <% end %>
+
       </div>
       <div class="container">
         <div class="row">

@@ -10,9 +10,10 @@ git clone git@github.com:planetskht/Srisailam-Right-Side-Main-Canal.git
 
 git clone git@github.com:planetskht/SKFF-Canal-Basemap-from-Km-0.000-to-Km-45.125.git
 
-git clone git@github.com:planetskht/Kandaleru-Reservoir-Basemap.git
+# git clone git@github.com:planetskht/Kandaleru-Reservoir-Basemap.git
 
 git clone git@github.com:planetskht/PBC-and-GKLI-Basemaps.git
+git clone git@github.com:planetskht/PBC-and-GKLI-Basemap.git
 
 # git clone git@github.com:planetskht/HNSS-Phase-1.git
 

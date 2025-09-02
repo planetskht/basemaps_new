@@ -265,7 +265,7 @@ sub_proj4 = ["SSG Canal Basemap from Km. 0.000 to Km. 5.435_10.000", "Basemap fr
 			"Basemap from Km 142.000 to Km 151.837", "7th Branch Canal Basemap from KM 0.000 TO KM 27.666", "7A AYACUT BASEMAP"]
 sub_proj5 = ["HNSS Phase 1", "HNSS Phase 2"]
 sub_proj6 = ["Pulichinthala Project"]
-sub_proj7 = ["PBC-and-GKLI-Basemaps"]
+sub_proj7 = ["PBC-and-GKLI-Basemap"]
 
 # Flash file for sub projects
 flash_sp1 = ["120.800-142.swf", "120.800-142.swf", "TGP MAIN CANAL.swf"]
