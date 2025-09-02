@@ -252,7 +252,7 @@ projects = ["TGP NANDYAL",
             "Kandaleru Reservoir Basemap",
             "SSG Canal Basemap from Km. 0.000 to Km. 151.837",
             "Handri-Neeva Sujala Sravanthi",
-	    "Pulichinthala Project"
+	    "Pulichinthala Project", "PBC-and-GKLI-Basemaps"
            ]
 
 # Sub Projects
@@ -265,6 +265,7 @@ sub_proj4 = ["SSG Canal Basemap from Km. 0.000 to Km. 5.435_10.000", "Basemap fr
 			"Basemap from Km 142.000 to Km 151.837", "7th Branch Canal Basemap from KM 0.000 TO KM 27.666", "7A AYACUT BASEMAP"]
 sub_proj5 = ["HNSS Phase 1", "HNSS Phase 2"]
 sub_proj6 = ["Pulichinthala Project"]
+sub_proj7 = ["PBC-and-GKLI-Basemaps"]
 
 # Flash file for sub projects
 flash_sp1 = ["120.800-142.swf", "120.800-142.swf", "TGP MAIN CANAL.swf"]
@@ -276,6 +277,7 @@ flash_sp4 = ["TGP MAIN CANAL.swf", "TGP MAIN CANAL.swf", "TGP MAIN CANAL.swf",
 			"TGP MAIN CANAL.swf", "TGP MAIN CANAL.swf", "TGP MAIN CANAL.swf"]
 flash_sp5 = []
 flash_sp6 = []
+flash_sp7 = []
 
 # Coordinates for sub projects
 coord_sp1 = ["SRBC COORDINATES CANAL & STRUCTURES.xls", "LINK CANAL COORDINATES.xls", "KM 0.000 TO KM 95.825-98.305.xls"]
@@ -287,6 +289,7 @@ coord_sp4 = ["no_file.xls", "points RR 10.xls", "points RR 30.xls",
 			"V4 Final 142.000 TO 151.837 COORDINATES.xls", "0.000 to 27.660.xls", "no_file.xls"]
 coord_sp5 = ["HNSS Plase 1 Co-ordinates.xlsx", "HNSS Plase 2 Co-ordinates.xlsx"]
 coord_sp6 = ["PCP village Coordinates.xlsx"]
+coord_sp7 = ["Co ordinates PBC & GKLI.xlsx"]
 
 if ENV["seed_project_number"].to_i > 0
   projects = [projects[ENV["seed_project_number"].to_i]] if ENV["seed_project_number"]

@@ -26,6 +26,10 @@ cd Kandaleru-Reservoir-Basemap
 git pull
 cd ..
 
+cd PBC-and-GKLI-Basemaps
+git pull
+cd ..
+
 # cd HNSS-Phase-1
 # git pull
 # cd ..
